@@ -22,7 +22,7 @@ class ImageCard extends React.Component {
     
     // 這裡有個 bug: 在 chrome 中 grid 只能有 1000 個 rows 和 columns
     // 因此用這種方法 infinite scroll 最多 height 只有 1000 * 10px = 10000px
-    // 目前還沒查到如何解決
+    // 目前還沒有方法解決(除非不用 grid)
     // https://github.com/rachelandrew/gridbugs/issues/28
     const spans = Math.ceil(height / 10) + 3;
 
