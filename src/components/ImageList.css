@@ -1,5 +1,15 @@
 .image-list {
   display: grid;
+  /* grid-template-columns 可以設置所有 columns 的屬性 
+     這裡用 repeat 代表每列用一樣的設定
+     auto-fill 是指自動計算目前螢幕寬度達成 RWD
+     minmax 是指將寬度維持在 250px~1fr之間
+     fr 是 grid 裡面的新單位，代表一份的意思
+     ex. grid-template-columns: 1fr 5fr; 代表1欄佔 1/6、1欄佔 5/6
+
+     深入研究可 grid-template-columns 看這個網頁：
+     https://ishadeed.com/article/css-grid-minmax/
+  */
   grid-template-columns: repeat(auto-fill, minmax(250px , 1fr));
   grid-gap: 0 10px;
   grid-auto-rows: 10px;

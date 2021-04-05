@@ -17,7 +17,7 @@ class ImageCard extends React.Component {
 
   setSpans = () => {
     const height = this.imageRef.current.clientHeight;
-    // ImageList.css, grid-auto-rows: 5px
+    // ImageList.css, grid-auto-rows: 10px
     // 這邊我們用 height / 10 看需要幾個 row，最後加 3 讓整體看起來平均一點
     
     // 這裡有個 bug: 在 chrome 中 grid 只能有 1000 個 rows 和 columns

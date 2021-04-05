@@ -56,6 +56,9 @@ class App extends React.Component {
         // 因此 page 超過 6 就不會再觀察 lazyRef
         // 確保 grid row 數量不會超過 1000
         if (this.state.page < 6) {
+            // 延遲 1 秒，讓圖片讀取完後才設置新的 Observer
+            // 因為讀取瞬間圖片還沒跑出來的時候，lazyRef 會出現在 viewport 最上方
+            // 這樣可以避免連續讀取
             setTimeout(() => {
                 this.observer.observe(this.lazyRef.current);
             }, 1000);
@@ -63,7 +66,7 @@ class App extends React.Component {
     }
     
     render() {
-        const bodyStyle = {
+        const searchBarStyle = {
             margin: "0px 10% 50px 10%"
         }
 
@@ -80,7 +83,7 @@ class App extends React.Component {
             <div>
                 <NavBar />
                 <div style={{ padding: "50px 10px", textAlign: "center", maxHeight: "100%" }}>
-                    <div style={ bodyStyle }>
+                    <div style={ searchBarStyle }>
                         <Searchbar afterSubmit={ this.afterSubmit }/>
                     </div>
                     <ImageList images={this.state.images} />
@@ -89,7 +92,6 @@ class App extends React.Component {
             </div>
         );
     }
-    
 }
 
 export default App;
