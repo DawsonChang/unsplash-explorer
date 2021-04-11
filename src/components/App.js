@@ -67,7 +67,7 @@ class App extends React.Component {
     
     render() {
         const searchBarStyle = {
-            margin: "50px auto",
+            margin: "100px auto 50px auto",
             width: "60%"
         }
 
@@ -82,14 +82,12 @@ class App extends React.Component {
         
         return (
             <div>
-                <NavBar />
-                <div style={{  }}>
-                    <div style={ searchBarStyle }>
-                        <Searchbar afterSubmit={ this.afterSubmit }/>
-                    </div>
-                    <div style={{margin: "20px auto"}}>
-                        <ImageList images={this.state.images} />
-                    </div>
+                <NavBar/>
+                <div style={ searchBarStyle }>
+                    <Searchbar afterSubmit={ this.afterSubmit }/>
+                </div>
+                <div style={{margin: "20px auto"}}>
+                    <ImageList images={this.state.images} />
                 </div>
                 <div>{lazyLoading(this.state.images)}</div>
             </div>
