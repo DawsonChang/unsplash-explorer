@@ -67,7 +67,8 @@ class App extends React.Component {
     
     render() {
         const searchBarStyle = {
-            margin: "0px 10% 50px 10%"
+            margin: "50px auto",
+            width: "60%"
         }
 
         // default: 不顯示 lazyloading 區域
@@ -82,11 +83,13 @@ class App extends React.Component {
         return (
             <div>
                 <NavBar />
-                <div style={{ padding: "50px 10px", textAlign: "center", maxHeight: "100%" }}>
+                <div style={{  }}>
                     <div style={ searchBarStyle }>
                         <Searchbar afterSubmit={ this.afterSubmit }/>
                     </div>
-                    <ImageList images={this.state.images} />
+                    <div style={{margin: "20px auto"}}>
+                        <ImageList images={this.state.images} />
+                    </div>
                 </div>
                 <div>{lazyLoading(this.state.images)}</div>
             </div>
