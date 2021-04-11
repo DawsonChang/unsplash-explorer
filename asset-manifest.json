@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/unsplash-explorer/static/css/main.a69d0da0.chunk.css",
-    "main.js": "/unsplash-explorer/static/js/main.77764c7d.chunk.js",
-    "main.js.map": "/unsplash-explorer/static/js/main.77764c7d.chunk.js.map",
+    "main.js": "/unsplash-explorer/static/js/main.da50cae9.chunk.js",
+    "main.js.map": "/unsplash-explorer/static/js/main.da50cae9.chunk.js.map",
     "runtime-main.js": "/unsplash-explorer/static/js/runtime-main.cf200cb2.js",
     "runtime-main.js.map": "/unsplash-explorer/static/js/runtime-main.cf200cb2.js.map",
     "static/css/2.150d169a.chunk.css": "/unsplash-explorer/static/css/2.150d169a.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.150d169a.chunk.css",
     "static/js/2.87669631.chunk.js",
     "static/css/main.a69d0da0.chunk.css",
-    "static/js/main.77764c7d.chunk.js"
+    "static/js/main.da50cae9.chunk.js"
   ]
 }
