@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+#### Stack: React, Unsplash API, JavaScript, CSS, HTML
+> - Project demo: https://dawsonchang.github.io/unsplash-explorer/ <br />
+
+![image](https://github.com/DawsonChang/project/blob/master/unsplash-explorer.gif)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
